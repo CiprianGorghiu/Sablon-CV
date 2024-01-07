@@ -32,6 +32,7 @@
 .cv-photo img:hover{
     margin-top: 40px;
     margin-left: 55px;
+    margin-bottom: 20px;
     align-items: center;
     transform: scale(1.5);
     border: 1px solid black;
@@ -117,6 +118,8 @@ height: 100px;
 .work-experince h4{
     margin-top: 10px;
 }
+
+
 .blue{
     
     color:#6096FF;
@@ -130,7 +133,13 @@ height: 100px;
     color:#A8A8A8;
     margin-left: 20px;
 }
-.work-experince .job1 li{
+.work-experince .job1:hover li{
+    color: #595959;
+}
+.work-experince .job2:hover li {
+    color:#595959;
+}
+.work-experince .job3:hover li{
     color: #595959;
 }
 .education{
