@@ -3,18 +3,22 @@
     
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    height: auto;
     
 }
 
 .container{
     display: flex;
+    height: auto;
+    
 }
 .left-container{
     display: flex;
     flex-direction: column;
     flex:0.8;
     background-color: #DFEEFF;
-    height: 135vh;
+    height: auto;
     width: auto;
     padding-top:10px ;
   
@@ -78,10 +82,7 @@
     margin-top: 20px;
     padding-left: 10px;
 }
-.social h5{
-    margin-top: 10px;
-    
-}
+
 .social a:active{
     color:#4489FF;
 }
@@ -149,3 +150,82 @@ height: 100px;
 .education h4{
     margin-top: 5px ;
 }
+
+/* Media querry */
+  @media only screen and (max-width: 600px) {
+    .cv-photo img{
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 120px;
+        width: 130px;
+        border-radius: 50%;
+        transition: transform 2s;
+        
+    }
+    .cv-photo img:hover{
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+        transform: scale(1.2);
+        border: 1px solid black;
+    
+    }
+    .social{
+        margin-left: 15px;
+        margin-top: 270px;
+        font-size: 30px;
+        
+    }
+   
+
+
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .cv-photo img{
+        margin-top: 30px;
+        margin-left: 30px;
+        height: 120px;
+        width: 130px;
+        border-radius: 50%;
+        transition: transform 2s;
+        
+    }
+    .cv-photo img:hover{
+        margin-top: 40px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        align-items: center;
+        transform: scale(1.2);
+        border: 1px solid black;
+    
+    }
+    .social{
+        margin-left: 13px;
+        margin-top: 270px;
+        font-size: 30px;
+        
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .cv-photo img{
+        margin-top: 30px;
+        margin-left: 50px;
+        height: 120px;
+        width: 130px;
+        border-radius: 50%;
+        transition: transform 2s;
+        
+    }
+    .cv-photo img:hover{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        align-items: center;
+        transform: scale(1.2);
+        border: 1px solid black;
+    
+    }
+  }
